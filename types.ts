@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-import React from 'react';
 
 export enum AppState {
   CHAOS = 'CHAOS',
@@ -113,74 +112,3 @@ export const getTreePosition = (height: number, baseRadius: number, layers: numb
 export const randomPointOnCone = (height: number, baseRadius: number): THREE.Vector3 => {
     return getTreePosition(height, baseRadius, 0); 
 };
-
-// Augment JSX.IntrinsicElements
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      ambientLight: any;
-      pointLight: any;
-      spotLight: any;
-      group: any;
-      points: any;
-      bufferGeometry: any;
-      bufferAttribute: any;
-      shaderMaterial: any;
-      instancedMesh: any;
-      sphereGeometry: any;
-      boxGeometry: any;
-      meshStandardMaterial: any;
-      meshBasicMaterial: any;
-      mesh: any;
-      color: any;
-      cylinderGeometry: any;
-      dodecahedronGeometry: any;
-      primitive: any;
-      octahedronGeometry: any;
-      coneGeometry: any;
-      torusGeometry: any;
-      icosahedronGeometry: any;
-      tubeGeometry: any;
-      torusKnotGeometry: any;
-      tetrahedronGeometry: any;
-      latheGeometry: any;
-      meshPhysicalMaterial: any;
-      extrudeGeometry: any;
-    }
-  }
-}
-
-declare module 'react' {
-  namespace JSX {
-    interface IntrinsicElements {
-      ambientLight: any;
-      pointLight: any;
-      spotLight: any;
-      group: any;
-      points: any;
-      bufferGeometry: any;
-      bufferAttribute: any;
-      shaderMaterial: any;
-      instancedMesh: any;
-      sphereGeometry: any;
-      boxGeometry: any;
-      meshStandardMaterial: any;
-      meshBasicMaterial: any;
-      mesh: any;
-      color: any;
-      cylinderGeometry: any;
-      dodecahedronGeometry: any;
-      primitive: any;
-      octahedronGeometry: any;
-      coneGeometry: any;
-      torusGeometry: any;
-      icosahedronGeometry: any;
-      tubeGeometry: any;
-      torusKnotGeometry: any;
-      tetrahedronGeometry: any;
-      latheGeometry: any;
-      meshPhysicalMaterial: any;
-      extrudeGeometry: any;
-    }
-  }
-}
